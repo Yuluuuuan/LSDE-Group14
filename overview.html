@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <!--header-->
+    <header class="header left">
+        <div class="left nav">
+            <ul>
+                <li class="nav_active"><a href="overview.html">Data Overview</a> </li>
+                <li><i class="nav_2"></i><a href="BL.html">Black Leaderboard</a> </li>
+            
+
+
+
+            </ul>
+        </div>
+
+        <div class="header_center left">
+            <h2><strong>Study of Scientific Impact Based on the Crossref</strong></h2>
+            
+            <p class="color_font"><small>Large Scale Data Engineering-Group 14</small></p>
+
+        </div>
+        <div class="right nav text_right">
+            <ul>
+                
+                <li><i class="nav_8"></i><a href="PageRank.html">PageRank</a> </li>
+                <li><i class="nav_4"></i><a href="Comparision.html">H-index Comparision</a> </li>
+            </ul>
+        </div>
+
+    </header>
+
+
+
+
+    <div class="con left">
+        <div class="select_time">
+            <div class="static_top1and23 left">
+                <i></i><span>Overall Data Distribution</span>
+            </div>
+        </div>
+  
+        <div class="con_div">
+            <div class="con_div_text left">
+                <div class="con_div_text01 left">
+                    <img src="img/nav_1.png" class="left text01_img" />
+                    <div class="left text01_div">
+                        <p>Json Files</p>
+                        <p>40229</p>
+                    </div>
+                </div>
+                <div class="con_div_text01 right">
+
+                    <div class="left text01_div">
+                        <p>Data Size(bytes)</p>
+                        <p>102509014730</p>
+                    </div>
+                </div>
+            </div>
+            <div class="con_div_text left">
+                <div class="con_div_text01 left">
+
+                    <div class="left text01_div">
+                        <p>The Newest Paper</p>
+                        <p>January 12,2021</p>
+                    </div>
+                </div>
+                <div class="con_div_text01 right">
+                    <div class="center text01_div">
+                        <p>Referenced Papers</p>
+                        <p>120644459</p>
+                    </div>
+                </div>
+            </div>
+            <div class="con_div_text left">
+
+                <div class="con_div_text01 left">
+
+                    <div class="left text01_div">
+                        <p>Max Value of the Referenced Count</p>
+                        <p>166307</p>
+                    </div>
+                </div>
+                <div class="con_div_text01 right">
+
+                    <div class="center text01_div">
+                        <p>Papers Stored with Authors</p>
+                        <p>80%</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="div_any">
+            <div class="left div_any01">
+                <div class="div_any_child">
+                    <div class="div_any_title">Description </div>
+                    <div class="top-list">
+                        <br>
+                        <p style="font-size: 20px">How to evaluate the quality and value of an academic paper or scholar? </p>
+                        <p style="font-size: 20px">Whether some scholars frequently cite their own articles in order to increase their h-index?</p>
+                        <p style="font-size: 20px">When several authors always cite each other's literature?</p> 
+                        <p style="font-size: 20px">How to define new metrics?  </p>
+
+                          <p >The purpose of this project is to process data of papers from Crossref:</p>
+                          <p>(1) Calculate H-indexes of authors and compare them with those of Google Scholar. </p>
+                          <p>(2) Find the most impactful papers in the last fifteen years.</p>
+                          <p>(3) Set rank for authors according to their self-citations and inner-circle. </p>
+                          <p>(4) Such results would be visualized.</p>
+                          
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="div_any02 left ">
+                <div class="div_any_child div_height">
+                    <div class="div_any_title any_title_width">Data Distribution of Self-citation and Pagerank </div>
+                    <div id="container" style="height: 90%;margin-top: 50px;"></div>
+                    <script type="text/javascript" src="js/echarts.min.js"></script>
+                    <script type="text/javascript">
+                        var dom = document.getElementById("container");
+                        var myChart = echarts.init(dom);
+                        var app = {};
+
+                        var option;
+
+  const data1 = [
+  {
+    name: 'Self-Citation: 1<count<=3',
+    value: 38152
+  },
+  {
+    name: 'Self-Citation: 3<count<=10',
+    value: 26253
+  },
+  {
+    name: 'Self-Citation: 10<count<=50',
+    value: 16205
+  },
+  {
+    name: 'Self-Citation: 50<count<=500',
+    value: 11575
+  },
+  {
+    name: 'Self-Citation: 500<count<=5000',
+    value: 4900
+  },
+  {
+    name: 'Self-Citation: 5000<count',
+    value: 849
+  },
+];
+
+const data3 = [
+  {
+    name: 'PaperRank:50<count',
+    value: 16661
+  },
+  
+  {
+    name: 'PaperRank:20<count<=50',
+    value: 60663
+  },
+  {
+    name: 'PaperRank:10<count<=20',
+    value: 143384
+  },
+  {
+    name: 'PaperRank:5<count<=10',
+    value: 353884
+  },
+  {
+    name: 'PaperRank:2<count<=5',
+    value: 1207149
+  },
+  {
+    name: 'PaperRank:1<count<=2',
+    value: 2180990
+  },
+ 
+];
+
+option = {
+  title: [
+    {
+      left: 'center'
+    },
+    {
+      left: '16.67%',
+      top: '75%',
+      textAlign: 'center'
+    },
+    {
+      left: '50%',
+      top: '75%',
+      textAlign: 'center'
+    },
+    {
+      left: '83.33%',
+      top: '75%',
+      textAlign: 'center'
+    }
+  ],
+  series: [
+    {
+      type: 'pie',
+      radius: '42%',
+      center: ['37%', '22%'],
+      data: data1,
+      roseType: 'area',
+      label: {
+        position: 'outer',
+        alignTo: 'none',
+        bleedMargin: 5
+      }
+    },
+
+    {
+      type: 'pie',
+      radius: '48%',
+      center: ['65%', '72%'],
+      data: data3,
+      roseType: 'area',
+      label: {
+        position: 'outer',
+        alignTo: 'labelLine',
+        margin: 5
+      }
+    }
+  ]
+};
+
+                        if (option && typeof option === 'object') {
+                            myChart.setOption(option);
+                        }
+
+
+                    </script>
+
+                </div>
+            </div>
+
+        </div>
+
+        <script src="js/jquery/jQuery-2.2.0.min.js"></script>
+
+        <script src="js/base.js"></script>
+        <script src="js/index.js"></script>
+</body>
+
+</html>

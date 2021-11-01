@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  overflow: scroll;
+  height: 100%;
+}
+body {
+  
+  background-size: 100%;
+}
+ul,
+li {
+  list-style: none;
+}
+@font-face {
+  font-family: '汉仪铸字超然体';
+  src: url('../fonts/汉仪铸字超然体.TTF');
+}
+
+
+.main {
+  width: 100%;
+  height: 85%;
+  margin-top: 5%;
+  /*padding: 0 4%;*/
+  box-sizing: border-box;
+
+}
+.main > div {
+  float: center;
+}
+.main .animate {
+  width: 100%;
+  height: 100%;
+}
+.main .animate .float {
+  width: 100%;
+  height: 50%;
+}
+.main .animate .float > div {
+  float: left;
+}
+.main .animate .float .floating1 {
+  width: 25%;
+  height: 75%;
+  margin-top: 2%;
+  margin-left: 8%;
+  background: url(../images/5.png) no-repeat bottom center;
+  background-size: 70%;
+  animation: float 6s linear infinite;
+}
+.main .animate .float .floating1 #roate1 {
+  width: 100%;
+  height: 50%;
+  background: url(../images/cicle5.png) no-repeat center;
+  background-size: 70%;
+  position: relative;
+}
+
+
+.main .animate .float .floating1 .pm {
+  width: 80%;
+  margin-left: 8%;
+  
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 0.9rem;
+
+}
+.main .animate .float .floating2 {
+  width: 25%;
+  height: 85%;
+  margin-top: 2%;
+  background: url(../images/3.png) no-repeat bottom center;
+  background-size: 65%;
+  margin-left: 5%;
+  animation: float2 6s linear infinite;
+}
+.main .animate .float .floating2 #roate2 {
+  width: 100%;
+  height: 50%;
+  background: url(../images/cicle2.png) no-repeat center;
+  background-size: 65%;
+  position: relative;
+}
+
+
+.main .animate .float .floating2 .pm2 {
+  width: 80%;
+  margin-left: 8%;
+  text-align: center;
+  color: #000000;
+  font-size: 0.9;
+}
+.main .animate .float .floating3 {
+  width: 25%;
+  height: 85%;
+  margin-top: 2%;
+  background: url(../images/4.png) no-repeat bottom center;
+  background-size: 70%;
+  margin-left: 2%;
+  animation: float3 6s linear infinite;
+}
+.main .animate .float .floating3 #roate3 {
+  width: 100%;
+  height: 60%;
+  background: url(../images/cicle5.png) no-repeat center;
+  background-size: 70%;
+  position: relative;
+}
+
+.main .animate .float .floating3 .pm3 {
+  width: 80%;
+  margin-left: 8%;
+  text-align: center;
+  color: #000000;
+  font-size: 0.9;
+}
+.main .animate .float .floating4 {
+  width: 25%;
+  height: 85%;
+  margin-top: 2%;
+  background: url(../images/4.png) no-repeat bottom center;
+  background-size: 90%;
+  margin-left: 13%;
+  animation: float4 6s linear infinite;
+}
+.main .animate .float .floating4 #roate4 {
+  width: 100%;
+  height: 60%;
+  background: url(../images/cicle5.png) no-repeat center;
+  background-size: 85%;
+  position: relative;
+}
+
+.main .animate .float .floating4 .pm4 {
+  text-align: center;
+  color: #000000;
+  font-size: 0.9;
+}
+.main .animate .float .floating5 {
+  width: 25%;
+  height: 85%;
+  margin-top: 2%;
+  background: url(../images/5.png) no-repeat bottom center;
+  background-size: 85%;
+  margin-left: 12%;
+
+  animation: float5 6s linear infinite;
+}
+.main .animate .float .floating5 #roate5 {
+  width: 100%;
+  height: 50%;
+  background: url(../images/cicle5.png) no-repeat center;
+  background-size: 80%;
+  position: relative;
+}
+
+
+.main .animate .float .floating5 .pm5 {
+  text-align: center;
+  color: #000000;
+  font-size: 0.9;
+
+}
+.main .animate .float .floating6 {
+  width: 25%;
+  height: 85%;
+  margin-top: 2%;
+  background: url(../images/5.png) no-repeat bottom center;
+  background-size: 65%;
+  margin-left: 2%;
+
+  animation: float6 6s linear infinite;
+}
+.main .animate .float .floating6 #roate6 {
+  width: 100%;
+  height: 50%;
+  background: url(../images/cicle5.png) no-repeat center;
+  background-size: 65%;
+  position: relative;
+}
+
+
+.main .animate .float .floating6 .pm6 {
+  text-align: center;
+  color: #000000;
+  font-size: 0.9;
+
+}
+
+
+.main .animate .float .floating7 {
+  width: 25%;
+  height: 85%;
+  margin-top: 2%;
+  background: url(../images/5.png) no-repeat bottom center;
+  background-size: 80%;
+  margin-left: 8%;
+
+  animation: float7 6s linear infinite;
+}
+.main .animate .float .floating7 #roate7 {
+  width: 100%;
+  height: 35%;
+  background: url(../images/cicle5.png) no-repeat center;
+  background-size: 80%;
+  position: relative;
+}
+
+
+.main .animate .float .floating7 .pm7 {
+  width: 80%;
+  margin-left: 8%;
+  text-align: center;
+  color: #000000;
+  font-size: 0.9;
+
+}
+
+.main .animate .float .floating8 {
+  width: 25%;
+  height: 85%;
+  margin-top: 2%;
+  background: url(../images/5.png) no-repeat bottom center;
+  background-size: 65%;
+  margin-left: 15%;
+
+  animation: float8 6s linear infinite;
+}
+.main .animate .float .floating8 #roate8 {
+  width: 100%;
+  height: 75%;
+  background: url(../images/cicle5.png) no-repeat center;
+  background-size: 65%;
+  position: relative;
+}
+
+
+.main .animate .float .floating8 .pm8 {
+  width: 80%;
+  margin-left: 8%;
+  text-align: center;
+  color: #000000;
+  font-size: 0.9;
+
+}
+
+.main .animate .float .floating9 {
+  width: 25%;
+  height: 85%;
+  margin-top: 2%;
+  background: url(../images/5.png) no-repeat bottom center;
+  background-size: 65%;
+  margin-left: 20%;
+
+  animation: float9 6s linear infinite;
+}
+.main .animate .float .floating9 #roate9 {
+  width: 100%;
+  height: 85%;
+  background: url(../images/cicle5.png) no-repeat center;
+  background-size:65%;
+  position: relative;
+}
+
+
+.main .animate .float .floating9 .pm9 {
+ 
+  text-align: center;
+  color: #000000;
+  font-size: 0.9;
+
+}
+
+.main .animate .float .floating10 {
+  width: 25%;
+  height: 85%;
+  margin-top: 2%;
+  background: url(../images/5.png) no-repeat bottom center;
+  background-size: 65%;
+  margin-left: 2%;
+
+  animation: float10 6s linear infinite;
+}
+.main .animate .float .floating10 #roate10 {
+  width: 100%;
+  height: 85%;
+  padding-bottom: 0rem;
+  background: url(../images/cicle5.png) no-repeat center;
+  background-size: 65%;
+  position: relative;
+}
+
+
+.main .animate .float .floating10 .pm10 {
+  padding-top: 0rem;
+  text-align: center;
+  color: #000000;
+  font-size: 0.9;
+
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes float2 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes float3 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes float4 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes float5 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes float6 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes float7 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes float8 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes float9 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes float10 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes circle {
+  0% {
+    transform: rotateX(70deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(70deg) rotateZ(360deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
+}
