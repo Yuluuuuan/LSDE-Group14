@@ -98,6 +98,29 @@ function char1() {
                 dataView: { 
                     show: true,
                     title: 'Dataview',
+                    optionToContent: function (opt) {
+                        var axisData = opt.xAxis[0].data;
+                        var series = opt.series;
+                        var tdHeads = '<td  style="padding:0 10px">Scholar Name</td>';
+                        series.forEach(function (item) {
+                            tdHeads += '<td style="padding: 0 10px">'+item.name+'</td>';
+                        });
+                        var table = '<table border="1" style="margin-left:20px;border-collapse:collapse;font-size:14px;text-align:center"><tbody><tr>'+tdHeads+'</tr>';
+                        var tdBodys = '';
+                        for (var i = 0, l = axisData.length; i < l; i++) {
+                            for (var j = 0; j < series.length; j++) {
+                                if(typeof(series[j].data[i]) == 'object'){
+                                    tdBodys += '<td>'+series[j].data[i].value+'</td>';
+                                }else{
+                                    tdBodys += '<td>'+ series[j].data[i]+'</td>';
+                                }
+                            }
+                            table += '<tr><td style="padding: 0 10px">'+axisData[i]+'</td>'+ tdBodys +'</tr>';
+                            tdBodys = '';
+                        }
+                        table += '</tbody></table>';
+                        return table;
+                    },
                     readOnly: false
                 }, 
                 magicType: {
